@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="450.0" styleClass="framePages" stylesheets="@../Styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.InsertDoctorController">
+   <children>
+      <VBox alignment="CENTER" layoutX="12.0" layoutY="6.0" prefHeight="367.0" prefWidth="434.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="35.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Button id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="33.0" />
+               </children>
+               <padding>
+                  <Insets right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Label alignment="TOP_LEFT" prefHeight="52.0" prefWidth="442.0" style="-fx-text-fill: white;" text="Add New Doctor">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="234.0" prefWidth="726.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="336.0" prefWidth="146.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="35.0" prefWidth="150.0" style="-fx-text-fill: white;" text="Name">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="150.0" style="-fx-text-fill: white;" text="Phone Number">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="150.0" style="-fx-text-fill: white;" text="Email">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="35.0" prefWidth="150.0" style="-fx-text-fill: white;" text="Name of Clicn">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="308.0" prefWidth="201.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="dname" prefHeight="35.0" prefWidth="150.0" promptText="enter name" style="-fx-text-fill: white;" />
+                        <TextField fx:id="dnumber" prefHeight="35.0" prefWidth="150.0" promptText="enter phone" style="-fx-text-fill: white;" />
+                        <TextField fx:id="demail" prefHeight="35.0" prefWidth="150.0" promptText="enter email" style="-fx-text-fill: white;" />
+                        <TextField fx:id="clinic" prefHeight="35.0" prefWidth="150.0" promptText="enter clinic's name" style="-fx-text-fill: white;" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="450.0" spacing="30.0">
+               <children>
+                  <Button id="tempPageButtons" mnemonicParsing="false" onAction="#getData" prefHeight="40.0" prefWidth="100.0" text="Save" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

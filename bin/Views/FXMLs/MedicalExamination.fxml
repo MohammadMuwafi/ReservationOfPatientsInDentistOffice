@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="864.0" styleClass="framePages" stylesheets="@../Styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MedicalExaminationController">
+   <children>
+      <AnchorPane layoutX="435.0" layoutY="64.0" prefHeight="523.0" prefWidth="404.0" AnchorPane.bottomAnchor="63.0" AnchorPane.topAnchor="61.0">
+         <children>
+            <DatePicker fx:id="day" layoutX="20.0" layoutY="3.0" onAction="#setValue" prefHeight="29.0" prefWidth="364.0" promptText="Choose Day " AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0" />
+            <ComboBox fx:id="materialColor" layoutX="20.0" layoutY="485.0" onAction="#getColor" prefHeight="30.0" prefWidth="364.0" promptText="Color Of Material" AnchorPane.bottomAnchor="5.0" />
+            <ComboBox fx:id="materialType" layoutX="20.0" layoutY="443.0" onAction="#getType" prefHeight="30.0" prefWidth="364.0" promptText="Type Of Material" AnchorPane.bottomAnchor="43.0" />
+            <Button id="tempPageButtons" fx:id="b1" layoutX="20.0" layoutY="40.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="7 - 8 am" AnchorPane.bottomAnchor="441.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Button id="tempPageButtons" fx:id="b2" layoutX="20.0" layoutY="80.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="8 - 9 am" AnchorPane.bottomAnchor="401.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Button id="tempPageButtons" fx:id="b3" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="9 - 10 am" AnchorPane.bottomAnchor="361.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Button id="tempPageButtons" fx:id="b4" layoutX="20.0" layoutY="160.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="10 - 11 am" AnchorPane.bottomAnchor="321.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Button id="tempPageButtons" fx:id="b5" layoutX="20.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="11 - 12 am" AnchorPane.bottomAnchor="281.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Button id="tempPageButtons" fx:id="b6" layoutX="20.0" layoutY="240.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="12 - 1 pm" AnchorPane.bottomAnchor="241.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Button id="tempPageButtons" fx:id="b7" layoutX="20.0" layoutY="280.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="1 - 2 pm" AnchorPane.bottomAnchor="201.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Button id="tempPageButtons" fx:id="b8" layoutX="20.0" layoutY="320.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="2 - 3 pm" AnchorPane.bottomAnchor="161.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Button id="tempPageButtons" fx:id="b9" layoutX="20.0" layoutY="360.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="3 - 4 pm" AnchorPane.bottomAnchor="121.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+            <Button id="tempPageButtons" fx:id="b10" layoutX="20.0" layoutY="400.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="40.0" prefWidth="380.0" text="4 - 5 pm" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="78.0" prefHeight="500.0" prefWidth="417.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="632.0" prefWidth="50.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="300.0" prefWidth="30.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="UR1" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="1" />
+                        <CheckBox fx:id="UR2" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="2" />
+                        <CheckBox fx:id="UR3" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="3" />
+                        <CheckBox fx:id="UR4" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="4" />
+                        <CheckBox fx:id="UR5" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="5" />
+                        <CheckBox fx:id="UR6" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="6" />
+                        <CheckBox fx:id="UR7" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="7" />
+                        <CheckBox fx:id="UR8" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="8" />
+                     </children>
+                     <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="300.0" prefWidth="30.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="LR1" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="1" />
+                        <CheckBox fx:id="LR2" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="2" />
+                        <CheckBox fx:id="LR3" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="3" />
+                        <CheckBox fx:id="LR4" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="4" />
+                        <CheckBox fx:id="LR5" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="5" />
+                        <CheckBox fx:id="LR6" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="6" />
+                        <CheckBox fx:id="LR7" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="7" />
+                        <CheckBox fx:id="LR8" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="8" />
+                     </children>
+                     <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+            <AnchorPane id="frameOfPhoto" prefHeight="511.0" prefWidth="306.0" stylesheets="@../Styles/style.css">
+               <children>
+                  <ImageView fitHeight="510.0" fitWidth="310.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../Images/teeth%20chart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="50.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="300.0" prefWidth="30.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="UL1" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="1" />
+                        <CheckBox fx:id="UL2" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="2" />
+                        <CheckBox fx:id="UL3" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="3" />
+                        <CheckBox fx:id="UL4" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="4" />
+                        <CheckBox fx:id="UL5" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="5" />
+                        <CheckBox fx:id="UL6" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="6" />
+                        <CheckBox fx:id="UL7" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="7" />
+                        <CheckBox fx:id="UL8" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="8" />
+                     </children>
+                     <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="300.0" prefWidth="30.0" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="LL1" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="1" />
+                        <CheckBox fx:id="LL2" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="2" />
+                        <CheckBox fx:id="LL3" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="3" />
+                        <CheckBox fx:id="LL4" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="4" />
+                        <CheckBox fx:id="LL5" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="5" />
+                        <CheckBox fx:id="LL6" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="6" />
+                        <CheckBox fx:id="LL7" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="7" />
+                        <CheckBox fx:id="LL8" mnemonicParsing="false" prefHeight="21.0" prefWidth="0.0" text="8" />
+                     </children>
+                     <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" layoutX="836.0" layoutY="19.0" prefHeight="35.0" prefWidth="100.0" spacing="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Button id="exit" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="33.0" />
+         </children>
+      </HBox>
+      <Button id="tempPageButtons" layoutX="394.0" layoutY="595.0" mnemonicParsing="false" onAction="#reserve" prefHeight="40.0" prefWidth="82.0" text="Apply" />
+   </children>
+</AnchorPane>

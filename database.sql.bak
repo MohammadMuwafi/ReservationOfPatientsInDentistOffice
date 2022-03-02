@@ -1,0 +1,53 @@
+drop database finalProject;
+create database finalProject;
+show databases;
+use finalProject;
+
+
+-- doctor table
+create table doctor (
+	dname varchar(50) not null default 'Unknown',
+    dnumber varchar(50) not null default '0595150676',
+    clinic varchar(50) not null default 'Unknown',
+    demail varchar(50) primary key not null
+    );
+    
+insert into doctor values 
+('ali', '0123456789', 'clinic1', 'ali@gmail.com'),
+('ahmed', '0234567895', 'clinic2', 'ahmed@gmail.com'),
+('basem', '0345678951', 'clinic3', 'basem@gmail.com'),
+('essa', '0456789512', 'clinic4', 'essa@gmail.com'),
+('mousa', '0567895123', 'clinic5', 'mousa@gmail.com'),
+('khalil', '0678951234', 'clinic6', 'khalil@gmail.com'),
+('khalid', '0789512345', 'clinic7', 'khalid@gmail.com'),
+('abd', '0895123456', 'clinic8', 'abd@gmail.com'),
+('mohammad', '0912345678', 'clinic9', 'mohammad@gmail.com');
+
+-- patient table
+create table patient (
+	pid int primary key auto_increment not null, 
+    pname varchar(50) not null,
+    pgender varchar(50) not null,
+    demail varchar(50) not null,
+    pcost varchar(50) default '50',
+    pbirthDate date default '1990-01-01', -- 'YYYY-MM-DD'
+	pdateOfExamination date not null default '1990-01-01',
+    ptimeOfdayOfExamination varchar(50) not null default '0',
+	pnumberOfteeth varchar(50) not null default '0',
+	pcolorOfMaterial varchar(50) not null default '0',
+    pTypeOfMaterial varchar(50) not null default '0',
+    foreign key(demail) references doctor(demail)
+    );
+
+insert into patient (pid, pname, pgender, demail) values(1, 'ali', 'male', 'ali@gmail.com');
+insert into patient (pid, pname, pgender, demail) values(2, 'mohammad', 'male', 'ali@gmail.com');
+insert into patient (pid, pname, pgender, demail) values(3, 'mostafa', 'male', 'ahmed@gmail.com');
+insert into patient (pid, pname, pgender, demail) values(4, 'abd', 'male', 'basem@gmail.com');
+insert into patient (pid, pname, pgender, demail) values(5, 'ahmed', 'male', 'essa@gmail.com');
+insert into patient (pid, pname, pgender, demail) values(6, 'momen', 'male', 'mousa@gmail.com');
+insert into patient (pid, pname, pgender, demail) values(7, 'baraa', 'male', 'khalil@gmail.com');
+insert into patient (pid, pname, pgender, demail) values(8, 'qasem', 'male', 'khalid@gmail.com');
+insert into patient (pid, pname, pgender, demail) values(9, 'basem', 'male', 'abd@gmail.com');
+
+
+select * from patient;

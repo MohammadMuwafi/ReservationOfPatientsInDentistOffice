@@ -1,0 +1,169 @@
+Button {
+	-fx-background-color: #0080FF;
+	-fx-text-fill: #FFFFFF;	
+	-fx-cursor: hand;
+}
+
+CheckBox {
+	-fx-text-fill: #FFFFFF;		
+	-fx-cursor: hand;
+}
+
+Button:hover {
+	-fx-background-color: #0060BF;
+}
+
+TextField, PasswordField {
+	-fx-background-color: transparent;	
+	-fx-border-color: Black;
+	-fx-border-width: 0.0px 0.0px 0.5px 0.0px;		
+}
+
+TextField:hover, PasswordField:hover {
+	-fx-border-width: 0.0px 0.0px 1.5px 0.0px;			
+	-fx-cursor: hand;	
+}
+
+.framePages, .tempPages {
+	-fx-background-color: #5C82CA;
+	-fx-border-color: Black;
+	-fx-border-width: 3px;			
+}
+
+.tempPages:hover {
+	-fx-background-color: #92ABDB;		
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #2D75E8;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;    
+	-fx-font-family: "Courier New";
+	-fx-font-weight: bold;
+	-fx-font-size: 18.0;
+}
+
+.table-row-cell:filled {
+	-fx-font-family: "Courier New";
+	-fx-font-weight: bold;
+	-fx-font-size: 18.0;
+}
+
+.table-row-cell:filled:hover, .list-cell:filled:hover, .combo-box:filled:hover { 
+ 	-fx-background-color: #0096C9;
+ 	-fx-text-fill: white;
+}
+
+.table-column {
+ 	-fx-alignment: CENTER;
+}
+
+.table-row-cell:empty {
+	-fx-background-color: #FFFFFF;	
+}
+
+.table-row-cell:empty, .table-cell {
+	-fx-border-width: 0.0px;
+}
+
+.vbox {
+	-fx-background-color: #0080FF;
+	-fx-border-width: 2px;
+	-fx-background-radius: 40px 0px 0px 40px;	
+	-fx-border-radius: 40px 0px 0px 40px;
+}
+
+.logInPage {
+	-fx-background-color: #FFFFFF;
+
+}
+
+.chart-title {
+	-fx-text-fill: #4682b4;
+	-fx-font-wieght: bold;
+	-fx-font-size: 40.0;
+}
+
+#DoctorButton, #PatientButton, #timeButtons  {
+	-fx-background-color: #0080FF;
+	-fx-text-fill: #FFFFFF;	
+	-fx-cursor: hand;
+}
+
+#DoctorButton:hover, #PatientButton:hover, #timeButtons:hover {
+	-fx-background-color: #0060BF;
+	 
+}
+
+#doctorPatientInformation, #medicalExamination, #insertPage {
+	-fx-background-color: #5C82CA;		
+}
+
+#doctorPatientInformation:hover {
+	-fx-background-color: #6494ED;	
+}
+
+#tempPageButtons {
+	-fx-background-color: #1DA775;
+	-fx-font-weight: bold;
+}
+
+#tempPageButtons:hover {
+	-fx-background-color: #68C4A3;
+}
+
+#infoDoctorPage, #infoPatientPage, #frameOfPhoto {
+	-fx-background-color: #8E9AA6;
+	-fx-border-color: Black;
+	-fx-border-width: 2.0px;
+}
+
+
+#patientsOfDoctorsPage {
+	-fx-background-color: #0080FF;	
+}
+
+#minimize, #exit {
+	-fx-effect: dropShadow(three-pass-box, rgba(123.0, 0.0, 0.0, 0.1), 5.0, 0.0, 0.0, 5.0);
+	-fx-background-radius: 50.0;
+	-fx-border-radius: 50.0;
+	-fx-cursor: hand;
+}
+
+#minimize {
+	-fx-background-color: #F7B742;	
+}
+
+#exit {
+	-fx-background-color: #E81123;
+}
+
+
+#exit:hover{
+	-fx-background-color: #FFC8C8; 
+}
+
+#minimize:hover{
+	-fx-background-color: #FCE7C0; 
+}
+
+#tiltleLabel {
+	-fx-background-color: #2D75E8;	
+	-fx-font-family: "Courier New";
+	-fx-font-weight: bold;
+}
+
+#hbox {
+	-fx-background-color: #FFFFFF;
+}
+
+#background {
+	-fx-background-color: #FFFFFF;
+	-fx-border-width: 2px;
+	-fx-background-radius: 40px;	
+	-fx-border-radius: 40px;
+}

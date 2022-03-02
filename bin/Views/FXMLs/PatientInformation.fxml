@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0" prefWidth="395.0" styleClass="tempPages" stylesheets="@../Styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PatientInformationController">
+   <children>
+      <VBox layoutX="18.0" layoutY="4.0" prefHeight="294.0" prefWidth="358.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="48.0" prefWidth="365.0">
+               <children>
+                  <Label id="DoctorInformation.fxml" prefHeight="32.0" prefWidth="165.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" text="Patient Name:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField id="DoctorInformation.fxml" fx:id="pname" disable="true" prefWidth="175.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" />
+               </children>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="365.0">
+               <children>
+                  <Label id="DoctorInformation.fxml" prefHeight="32.0" prefWidth="165.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" text="Patient ID:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField id="DoctorInformation.fxml" fx:id="pid" disable="true" prefWidth="175.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" />
+               </children>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="365.0">
+               <children>
+                  <Label id="DoctorInformation.fxml" prefHeight="40.0" prefWidth="165.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" text="Patient Gender: ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField id="DoctorInformation.fxml" fx:id="pgender" disable="true" prefWidth="175.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" />
+               </children>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="365.0">
+               <children>
+                  <Label id="DoctorInformation.fxml" prefHeight="32.0" prefWidth="165.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" text="Patient dob:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField id="DoctorInformation.fxml" fx:id="pdateOfBirth" disable="true" prefWidth="175.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" />
+               </children>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="365.0">
+               <children>
+                  <Label id="DoctorInformation.fxml" prefHeight="40.0" prefWidth="165.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" text="Cost($) :">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField id="DoctorInformation.fxml" fx:id="pcost" disable="true" prefWidth="175.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" />
+               </children>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="365.0">
+               <children>
+                  <Label id="DoctorInformation.fxml" prefHeight="40.0" prefWidth="165.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" text="Number of Teeth">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField id="DoctorInformation.fxml" fx:id="pnumberOfTeeth" disable="true" prefWidth="175.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" />
+               </children>
+            </HBox>
+            <HBox prefHeight="48.0" prefWidth="365.0">
+               <children>
+                  <Label id="DoctorInformation.fxml" prefHeight="40.0" prefWidth="165.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" text="Date of Examination: ">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField id="DoctorInformation.fxml" fx:id="pdateOfExamination" disable="true" prefWidth="175.0" style="-fx-text-fill: white; -fx-font-weight: Bold;" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Button id="tempPageButtons" fx:id="makeOrder" layoutX="84.0" layoutY="294.0" mnemonicParsing="false" onAction="#loadMedicalExamination" prefHeight="32.0" prefWidth="236.0" text="make a medical examination" textFill="WHITE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
